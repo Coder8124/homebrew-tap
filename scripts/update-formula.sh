@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rewrite Formula/logos.rb for a logos release from that release's SHA256SUMS,
+# Rewrite Formula/logos-mcp.rb for a logos release from that release's SHA256SUMS,
 # so no checksum in the formula is ever typed by hand.
 #
 #   scripts/update-formula.sh v0.4.3
@@ -13,7 +13,7 @@ TAG="${1:?usage: update-formula.sh vX.Y.Z}"
 case "$TAG" in v*) ;; *) TAG="v$TAG" ;; esac
 VERSION="${TAG#v}"
 BASE="${RELEASE_BASE:-https://github.com/Coder8124/logos/releases/download/${TAG}}"
-FORMULA="$(cd "$(dirname "$0")/.." && pwd)/Formula/logos.rb"
+FORMULA="$(cd "$(dirname "$0")/.." && pwd)/Formula/logos-mcp.rb"
 
 sums="$(curl -fsSL "${BASE}/SHA256SUMS")"
 
@@ -29,7 +29,7 @@ sha() {
 }
 
 cat >"$FORMULA" <<RUBY
-class Logos < Formula
+class LogosMcp < Formula
   desc "Cross-tool memory and continuity for AI coding agents, over MCP"
   homepage "https://github.com/Coder8124/logos"
   version "${VERSION}"
@@ -67,7 +67,7 @@ class Logos < Formula
         logos setup
 
       Hosts are wired to #{opt_bin}/logos, which keeps working after
-      \`brew upgrade logos\`. Update with brew, not \`logos update\`.
+      \`brew upgrade logos-mcp\`. Update with brew, not \`logos update\`.
     EOS
   end
 
