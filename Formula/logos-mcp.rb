@@ -1,28 +1,28 @@
 class LogosMcp < Formula
   desc "Cross-tool memory and continuity for AI coding agents, over MCP"
   homepage "https://github.com/Coder8124/logos"
-  version "0.4.6"
+  version "0.4.8"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Coder8124/logos/releases/download/v0.4.6/logos_v0.4.6_darwin_arm64.tar.gz"
-      sha256 "33d7a29efdb3ff0905aeab2815e529d6dae5ff8d151e34e34f99a7e0f387c4f4"
+      url "https://github.com/Coder8124/logos/releases/download/v0.4.8/logos_v0.4.8_darwin_arm64.tar.gz"
+      sha256 "852511966ff1fbad906bda27f64310d4cca14090d51b3030d1e31637b08afaf4"
     end
     on_intel do
-      url "https://github.com/Coder8124/logos/releases/download/v0.4.6/logos_v0.4.6_darwin_amd64.tar.gz"
-      sha256 "3e1587c7327a25d420bb5b8f3f204276ed1997d28a2461f7130339baa3f7923e"
+      url "https://github.com/Coder8124/logos/releases/download/v0.4.8/logos_v0.4.8_darwin_amd64.tar.gz"
+      sha256 "593a31cdf2b796a2d0bc529990e48a47e4259d60fdc619ac106f7f4cd253e430"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Coder8124/logos/releases/download/v0.4.6/logos_v0.4.6_linux_arm64.tar.gz"
-      sha256 "8dc93d1ebdea735ef9a37ae16c350ae2d9131b050306b3a08e52c8dd67d15a3c"
+      url "https://github.com/Coder8124/logos/releases/download/v0.4.8/logos_v0.4.8_linux_arm64.tar.gz"
+      sha256 "68517cb95fbb39ac59f889a65d795700d21e3ef563bafdae2c9b9cf31aa81cc1"
     end
     on_intel do
-      url "https://github.com/Coder8124/logos/releases/download/v0.4.6/logos_v0.4.6_linux_amd64.tar.gz"
-      sha256 "65c3ee97a2417fae8887bde97e0a6d16251bdde046c1b69ef8dfb7dd25c7ee9e"
+      url "https://github.com/Coder8124/logos/releases/download/v0.4.8/logos_v0.4.8_linux_amd64.tar.gz"
+      sha256 "0ddbdada301e7130da4b09d1cd056239150522191b945ad36f2296314aa8ee0a"
     end
   end
 
